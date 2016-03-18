@@ -154,7 +154,7 @@
 -->
 		<footer id="m-footer" class="text-center">
 		  <hr>
-		  &copy;Mossle
+		  &copy;Beta
 		</footer>
       </aside>
       <!-- end of sidebar -->

@@ -34,7 +34,6 @@ public class CmsWidgetResource {
         String tenantId = tenantHolder.getTenantId();
         String hql = "from CmsArticle where tenantId=? order by createTime desc";
         List<CmsArticle> cmsArticles = cmsArticleManager.find(hql, tenantId);
-
         StringBuilder buff = new StringBuilder();
         buff.append("<marquee direction='up' scrollamount='2'>");
 

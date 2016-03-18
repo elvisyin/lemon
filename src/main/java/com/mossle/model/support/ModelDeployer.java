@@ -124,7 +124,9 @@ public class ModelDeployer {
             String tenantId, Map<String, FormField> formFieldMap)
             throws IOException {
         FormDTO formDto = formConnector.findForm(formKey, tenantId);
-
+        if (formDto == null){
+        	return;
+        }
         if (formDto.isRedirect()) {
             return;
         }
